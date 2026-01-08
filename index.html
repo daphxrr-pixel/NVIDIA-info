@@ -1,0 +1,171 @@
+¡Claro que sí! He diseñado para ti una estructura de página web moderna, limpia y organizada que resalta el impacto de NVIDIA en el mundo tecnológico actual.
+
+Aquí tienes el código HTML y CSS listo para usar. Puedes copiarlo en un bloc de notas y guardarlo como index.html para verlo en tu navegador.
+
+Código de la Página Web
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA | El Líder en Computación con IA</title>
+    <style>
+        :root {
+            --nvidia-green: #76b900;
+            --dark-bg: #000000;
+            --card-bg: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--dark-bg);
+            padding: 1rem 5%;
+            border-bottom: 2px solid var(--nvidia-green);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--nvidia-green);
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.nvidia.com/aem-dam/Solutions/Data-Center/h100/nvidia-h100-product-page-og-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            border: 1px solid #333;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--nvidia-green);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: var(--nvidia-green);
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--nvidia-green);
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #0a0a0a;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">NVIDIA INFO</a>
+        <nav>
+            <a href="https://www.nvidia.com" target="_blank" style="color: white; text-decoration: none;">Sitio Oficial</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Impulsando la Era de la IA</h1>
+        <p>Desde el Gaming hasta los Centros de Datos más potentes del mundo.</p>
+    </section>
+
+    <div class="container">
+        <h2 style="border-left: 5px solid var(--nvidia-green); padding-left: 15px;">Pilares de Innovación</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Inteligencia Artificial</h3>
+                <p>NVIDIA es el motor detrás de la revolución de la IA generativa. Sus chips H100 y Blackwell alimentan a gigantes como OpenAI y Google.</p>
+                <a href="https://www.nvidia.com/es-la/data-center/h100/" class="btn" target="_blank">Saber más</a>
+            </div>
+
+            <div class="card">
+                <h3>Gaming (GeForce RTX)</h3>
+                <p>Líderes en trazado de rayos (Ray Tracing) y DLSS. La serie 40 redefine el realismo y el rendimiento para jugadores y creadores.</p>
+                <a href="https://www.nvidia.com/es-la/geforce/graphics-cards/40-series/" class="btn" target="_blank">Ver Gráficas</a>
+            </div>
+
+            <div class="card">
+                <h3>Omniverse</h3>
+                <p>Una plataforma de computación para digitalizar flujos de trabajo industriales y construir aplicaciones de metaverso y gemelos digitales.</p>
+                <a href="https://www.nvidia.com/es-la/omniverse/" class="btn" target="_blank">Explorar</a>
+            </div>
+        </div>
+
+        <section style="margin-top: 60px;">
+            <h2>¿Por qué es importante NVIDIA hoy?</h2>
+            <p>Originalmente conocida por sus tarjetas gráficas para videojuegos, NVIDIA inventó la <strong>GPU (Unidad de Procesamiento Gráfico)</strong> en 1999. Hoy, esa misma tecnología se ha adaptado para procesar algoritmos complejos de IA, convirtiéndola en una de las empresas más valiosas del planeta.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Página Informativa sobre NVIDIA. <br> "The Way It's Meant to be Played"</p>
+    </footer>
+
+</body>
+</html>
